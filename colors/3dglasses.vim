@@ -1,15 +1,19 @@
 " Vim color file
 " Name: 3dglasses
 " Maintainer: Erik Falor <ewfalor@gmail.com>
-" Version: 1.0
+" Version: 1.1
 "
+" 	Version 1.1:	Added support for GetLatestVimScripts
+"
+" 	Version 1.0:	Initial upload
+" GetLatestVimScripts: 2019 1 :AutoInstall: 3dglasses.vim
 
 set background=dark
 if version < 700 
 	finish
 else 
-	hi clear
 	if exists("syntax_on")
+		hi clear
 		syntax reset
 	endif
 endif
@@ -63,9 +67,6 @@ execute "hi Directory		guifg=" . s:LightBlue[0]
 "execute "hi SpellCap	
 "execute "hi SpellLocal	
 "execute "hi SpellRare	
-"execute "hi TabLine		TODO - non-active tab page label
-"execute "hi TabLineFill	TODO - fill color where there are no tabs
-"execute "hi TabLineSel		TODO - active tab page label
 
 execute "hi Cursor			guibg=" . s:DarkBlue[2] . " guifg=" . s:DarkBlue[0]
 execute "hi CursorColumn	guibg=" . s:Red[0]
@@ -86,6 +87,9 @@ execute "hi Question		guifg=" . s:Red[2]
 execute "hi Search			gui=bold guisp=NONE guibg=" . s:LightBlue[4] 
 execute "hi StatusLine		gui=none guibg=" . s:LightBlue[2] . " guifg=" . s:LightBlue[0]
 execute "hi StatusLineNC	gui=none guibg=" . s:Red[1] . " guifg=" . s:Red[4]
+execute "hi TabLine			guibg=" . s:Red[1] . " guifg=" . s:Red[3]
+execute "hi TabLineFill		guifg=" . s:Red[1]
+execute "hi TabLineSel		guibg=" . s:LightBlue[3] . " guifg=" . s:DarkBlue[0]
 execute "hi Title			gui=bold guifg=" . s:Red[3]
 execute "hi VertSplit		gui=none guibg=" . s:Red[1] . " guifg=" . s:Red[4]
 execute "hi Visual			guibg=" . s:Red[4] . " guifg=" . s:Red[0]
