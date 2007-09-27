@@ -1,7 +1,10 @@
 " Vim color file
 " Name: 3dglasses
 " Maintainer: Erik Falor <ewfalor@gmail.com>
-" Version: 1.1
+" Version: 1.1.1
+"
+" 	Version 1.1.1:	Modified MatchParen group so that Matching < > in XML
+" 	files stand out better.
 "
 " 	Version 1.1:	Added support for GetLatestVimScripts
 "
@@ -76,7 +79,7 @@ execute "hi FoldColumn		guibg=" . s:Red[0] . " guifg=" . s:Red[2]
 execute "hi Folded			guibg=" . s:Red[0] . " guifg=" . s:Red[2]
 execute "hi IncSearch		gui=none guibg=" . s:Red[2] . " guifg=" . s:Red[0] 
 execute "hi LineNr			guibg=" . s:Black[3] . " guifg=" . s:Red[3]
-execute "hi MatchParen		guibg=" . s:Red[3] 
+execute "hi MatchParen		guibg=" . s:Red[2] 
 execute "hi ModeMsg			guibg=NONE guifg=" . s:LightBlue[2]
 execute "hi MoreMsg			guibg=NONE guifg=" . s:Red[2]
 execute "hi Pmenu			guibg=" . s:LightBlue[3] . " guifg=" . s:DarkBlue[0]
